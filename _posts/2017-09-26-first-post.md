@@ -3,7 +3,7 @@ title: first post
 author_profile: true
 layout: single
 permalink: /first-post
-comments: true
+comment: true
 ---
 
 kicking the tires with jekyll
