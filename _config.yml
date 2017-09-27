@@ -81,7 +81,7 @@ analytics:
 author:
   name             : "Dana Lewis"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an amazing person."
+  bio              : "Built artificial pancreas (#DIYPS). Founder, #OpenAPS (OpenAPS.org). Moderator, #hcsm (Sun 8pmCT). Thinker, doer, teacher of health & digital things."
   location         : "Seattle"
   email            : dana@OpenAPS.org
   uri              :
@@ -91,7 +91,7 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           :
+  github           : danamlewis
   gitlab           :
   google_plus      :
   keybase          :
