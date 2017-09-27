@@ -1,14 +1,14 @@
 comments:
   provider: "staticman"
 staticman:
-  allowedFields          : ['name', 'email', 'message']
+  allowedFields          : ["name", "email", "message"]
   branch                 : "master" # "master", "gh-pages"
   commitMessage          : "New comment."
   filename               : comment-{@timestamp}
   format                 : "yml"
   moderation             : true
   path                   : "/_data/comments/{options.slug}"
-  requiredFields         : ['name', 'email', 'message']
+  requiredFields         : ["name", "email", "message"]
   transforms:
     email                : "md5"
   generatedFields:
