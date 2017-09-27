@@ -18,9 +18,20 @@
   font-size: 0.8em;
 
   // comment replies
-  &.child {
+//  &.child {
+//    margin-left: 4.5em;
+//  }
+   &.child {
     margin-left: 4.5em;
-  }
+
+    &:before,
+    &:after {
+      position: absolute;
+      left: 1.5em;
+      content: '';
+      width: 0.5em;
+      background-color: #e3e3e3;
+    }
 }
 
 .comment-timestamp {
