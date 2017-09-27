@@ -1,6 +1,7 @@
 ---
 title: About Dana
-layout: pages
+author_profile: true
+layout: single
 permalink: /about
 ---
 
