@@ -244,7 +244,7 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: true
+      comment: true
       share: true
       related: true
   # _pages
