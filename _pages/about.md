@@ -1,6 +1,6 @@
 ---
 title: About Dana
-layout: page
+layout: pages
 permalink: /about
 ---
 
