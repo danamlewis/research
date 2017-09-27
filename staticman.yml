@@ -1,7 +1,7 @@
 comments:
   provider: "staticman"
 staticman:
-  allowedFields          : ['name', 'email', 'url', 'message']
+  allowedFields          : ['name', 'email', 'message']
   branch                 : "master" # "master", "gh-pages"
   commitMessage          : "New comment."
   filename               : comment-{@timestamp}
