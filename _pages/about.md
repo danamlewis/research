@@ -1,7 +1,7 @@
 ---
 title: About Dana
 layout: page
-permalink: /about/
+permalink: /about
 ---
 
 # About Dana
