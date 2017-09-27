@@ -1,6 +1,6 @@
 foobar10
 
-<-- start sample -->
+<!-- start sample -->
 
   <div class="page__comments">
   {% capture comments_label %}{{ site.data.ui-text[site.locale].comments_label | default: "Comments" }}{% endcapture %}
@@ -118,9 +118,10 @@ foobar10
   {% endcase %}
 </div>
   
-<-- end sample -->  
+<!-- end sample -->  
 
-<-- OLD THAT WORKED:
+FOOBAR2
+
 <div class="page__comments">
   {% capture comments_label %}{{ site.data.ui-text[site.locale].comments_label | default: "Comments" }}{% endcapture %}
     {% case site.comments.provider %}
@@ -147,7 +148,7 @@ foobar10
           }
         </script>
         <script async type="text/javascript" src="https://apis.google.com/js/plusone.js" onload="initComment()" />
-        <noscript>Please enable JavaScript to view the <a href="https://plus.google.com/">comments powered by Google+.</a></noscript>-->
+        <noscript>Please enable JavaScript to view the <a href="https://plus.google.com/">comments powered by Google+.</a></noscript> -->
       {% when "staticman" %}
         <section id="static-comments">
           {% if site.repository and site.staticman.branch %}
@@ -223,4 +224,4 @@ foobar10
   {% endcase %}
 </div>
 
--->
+
