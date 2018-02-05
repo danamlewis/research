@@ -9,7 +9,7 @@ minimal_mistakes_skin    : "default" # "air", "contrast", "dark", "dirt", "mint"
 
 # Site Settings
 locale                   : "en"
-title                    : "Opening Pathways for discovery, research, and innovation in health"
+title                    : "Opening Pathways"
 title_separator          : "-"
 name                     : "Dana Lewis"
 description              : "Thoughts on research, coding, and more."
