@@ -1,10 +1,11 @@
 # main links
 main:
-   - title: "About"
+   - title: "About the project"
      url: https://danamlewis.github.io/research/about.html
-  # - title: "Sample Posts"
-  #   url: /year-archive/
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
-  # - title: "Sitemap"
-  #   url: /sitemap/
+
+   - title: "Team"
+     url: https://danamlewis.github.io/research/meet-the-team.html
+     
+   - title: "Blog"
+     url: https://danamlewis.github.io/research/blog.html
+     
