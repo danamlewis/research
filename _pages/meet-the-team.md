@@ -1,6 +1,6 @@
 ---
 title: Meet the team
-permalink: /docs/meet-the-team/
+permalink: /meet-the-team/
 layout: single
 author_profile: false
 ---
