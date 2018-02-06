@@ -22,5 +22,5 @@ nav:
 
   - title: External links
     children:
-      - title: "Team Github
-        url: "https://github.com/opening-pathways"
+      - title: "Project work on Github"
+        url: https://github.com/opening-pathways
