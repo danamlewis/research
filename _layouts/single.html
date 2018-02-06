@@ -30,12 +30,13 @@ sidebar:
       {% unless page.header.overlay_color or page.header.overlay_image %}
         <header>
           {% if page.title %}<h1 class="page__title" itemprop="headline">{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}</h1>{% endif %}
-          <!-- add comment count to top of post -->
-          {% if page.comments == true and site.data.comments[page.slug].size > 0 %}
-              <p class="byline-item"><a href="#comments"><svg class="icon icon--comments" width="16px" height="16px"><use xlink:href="{{ 'icons.svg#icon-comments' | prepend: 'assets/icons/' | relative_url }}"></use></svg>{{ site.data.comments[page.slug] | size }}&nbsp;Comment{% if site.data.comments[page.slug].size > 1 %}s{% endif %}</a></p>
-          {% endif %}
           {% if page.read_time %}
             <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</p>
+          {% endif %}
+    <!-- add comment count to top of post -->
+          {% if page.comments == true and site.data.comments[page.slug].size > 0 %}
+          <p class="page__meta"><i class="fa fa-comments" aria-hidden="true"></i> {{ 'icons.svg#icon-comments' | prepend: 'assets/icons/' | relative_url }}"></use></svg>{{ site.data.comments[page.slug] | size }}&nbsp;Comment{% if site.data.comments[page.slug].size > 1 %}s{% endif %}</a></p>
+         
           {% endif %}
         </header>
       {% endunless %}
