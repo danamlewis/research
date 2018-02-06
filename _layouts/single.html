@@ -50,9 +50,12 @@ sidebar:
           <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Updated:" }}</strong> <time datetime="{{ page.last_modified_at | date: "%Y-%m-%d" }}">{{ page.last_modified_at | date: "%B %d, %Y" }}</time></p>
         {% elsif page.date %}
           <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Updated:" }}</strong> <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time></p>
-             {% if site.data.comments[post.slug].size > 0 and post.comments %}
+        <!--     {% if site.data.comments[post.slug].size > 0 and post.comments %}
         <a href="{{ post.url | relative_url }}#comments"><svg class="icon icon--comments" width="16px" height="16px"><use xlink:href="{{ 'icons.svg#icon-comments' | prepend: 'assets/icons/' | relative_url }}"></use></svg>{{ site.data.comments[post.slug] | size }} Comment{% if site.data.comments[post.slug].size > 1 %}s{% endif %}</a>
-      {% endif %}
+      {% endif %} -->
+        {% if page.comments == true and site.data.comments[page.slug].size > 0 %}
+              <span class="byline-item"><a href="#comments"><svg class="icon icon--stopwatch" width="16px" height="16px"><use xlink:href="{{ 'icons.svg#icon-comments' | prepend: 'assets/icons/' | relative_url }}"></use></svg>{{ site.data.comments[page.slug] | size }}&nbsp;Comment{% if site.data.comments[page.slug].size > 1 %}s{% endif %}</a></span>
+        {% endif %}
         {% endif %}
       </footer>
 
