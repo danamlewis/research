@@ -202,4 +202,5 @@ defaults:
     values:
       layout: single
       author_profile: false
-      nav: "nav"
+      sidebar:
+        nav: "nav"
