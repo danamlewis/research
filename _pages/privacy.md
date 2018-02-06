@@ -1,7 +1,7 @@
 ---
 title: Privacy
 layout: single
-permalink: /privacy/
+permalink: /privacy
 ---
 Privacy Statement
 
