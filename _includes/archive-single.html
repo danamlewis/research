@@ -34,7 +34,7 @@
       <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</p>
     {% endif %}
     {% if page.comments == true and site.data.comments[page.slug].size > 0 %}
-            <a href="{{ post.url }} #comments"><i class="fa fa-comments" aria-hidden="true"></i> {{ site.data.comments[page.slug] | size }}&nbsp;Comment{% if site.data.comments[page.slug].size > 1 %}s{% endif %}</a></p>
+            <a href="{{ post.url }}#comments"><i class="fa fa-comments" aria-hidden="true"></i> {{ site.data.comments[page.slug] | size }}&nbsp;Comment{% if site.data.comments[page.slug].size > 1 %}s{% endif %}</a></p>
     {% endif %}
     {% if post.excerpt %}<p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify | strip_html | truncate: 160 }}</p>{% endif %}
   </article>
