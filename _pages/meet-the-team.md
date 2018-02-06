@@ -21,41 +21,22 @@ Erik W. Johnston, Ph.D, is an associate professor in the School for the Future o
 
 <img src="{{site.baseurl}}/assets/img/ehekler.png" width="244" height="200" align="left" hspace="20" alt="Eric Hekler"> 
 
-
 Dr. Eric Hekler, PhD, is an Associate Professor in the Department of Family Medicine & Public Health in the University of California, San Diego. His research focuses on individualized and “precise” behavior change for fostering long-term health and well-being.
-
-<br>
-<br>
-<br>
-<br>
 
 #### John Harlow
 
 <img src="{{site.baseurl}}/assets/img/JH_Headshot.jpg" width="146" height="200" align="left" hspace="20" alt="John Harlow"> 
 John Harlow is a postdoctoral scholar in the <a href="http://opening-governance.org">MacArthur Foundation Research Network on Opening Governance</a> at the Arizona State University School for the Future of Innovation in Society. He researches strategic intervention points for process innovation in governance. On this project, John will help design and facilitate engagements with stakeholders in healthcare innovation, and work on training materials for other patient communities to become patient researchers.
 
-<br>
-<br>
-<br>
-
 #### Sayali Phatak
 
 <img src="{{site.baseurl}}/assets/img/sphatak.jpg" width="160" height="200" align="left" hspace="20" alt="Sayali Phatak"> 
 Sayali Phatak is a Doctoral Student and Research Associate at the School of Nutrition and Health Promotion at Arizona State University. Her work focuses on the design and development of personalized approaches for improving health and well-being; particularly, designing processes and tools to support strategies such as self-experimentation and self-tracking.
-<br>
-<br>
-<br>
-<br>
-<br>
 
 #### Keren Hirsch
 
 <img src="{{site.baseurl}}/assets/img/kbhirsch.png" width="199" height="200" align="left" hspace="20" alt="Keren Hirsch"> 
 Keren Hirsch works in Project Management at Arizona State University's Decision Theater, an immersive visualization environment. She is passionate about helping to create informed decision-makers that tackle today's complex issues, such as healthcare, education, and sustainability. Her role as Project Manager allows her to advance these types of research projects in an organized and systematic fashion.
-
-<br>
-<br>
-<br>
 
 ##### Contact the team
 
