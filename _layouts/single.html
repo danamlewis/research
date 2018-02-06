@@ -35,8 +35,7 @@ sidebar:
           {% endif %}
     <!-- add comment count to top of post -->
           {% if page.comments == true and site.data.comments[page.slug].size > 0 %}
-          <p class="page__meta"><i class="fa fa-comments" aria-hidden="true"></i> {{ 'icons.svg#icon-comments' | prepend: 'assets/icons/' | relative_url }}"></use></svg>{{ site.data.comments[page.slug] | size }}&nbsp;Comment{% if site.data.comments[page.slug].size > 1 %}s{% endif %}</a></p>
-         
+          <p class="page__meta"><i class="fa fa-comments" aria-hidden="true"></i> {{ prepend: 'assets/icons/' | relative_url }}"></use></svg>{{ site.data.comments[page.slug] | size }}&nbsp;Comment{% if site.data.comments[page.slug].size > 1 %}s{% endif %}</a></p>
           {% endif %}
         </header>
       {% endunless %}
