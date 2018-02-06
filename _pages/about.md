@@ -1,5 +1,5 @@
 ---
-title: About The Research Team
+title: About The Opening Pathways Project
 author_profile: false
 layout: single
 permalink: /about
