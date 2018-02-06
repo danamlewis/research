@@ -57,7 +57,7 @@ yandex_site_verification :
 
 # Social Sharing
 twitter:
-  username               : danamlewis
+  username               : 
 facebook:
   username               :
   app_id                 :
@@ -75,40 +75,6 @@ analytics:
   provider               : false # false (default), "google", "google-universal", "custom"
   google:
     tracking_id          :
-
-
-# Site Author
-author:
-  name             : "Dana Lewis"
-  avatar           : /assets/Dana_Lewis_tulips.JPG # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Built artificial pancreas (#DIYPS). Founder, #OpenAPS (OpenAPS.org). Moderator, #hcsm (Sun 8pmCT). Thinker, doer, teacher of health & digital things."
-  location         : "Seattle"
-  email            : dana@OpenAPS.org
-  uri              :
-  bitbucket        :
-  codepen          :
-  dribbble         :
-  flickr           :
-  facebook         :
-  foursquare       :
-  github           : danamlewis
-  gitlab           :
-  google_plus      :
-  keybase          :
-  instagram        :
-  lastfm           :
-  linkedin         : # "john-doe-12345678" (the last part of your profile url, e.g. https://www.linkedin.com/in/john-doe-12345678)
-  pinterest        :
-  soundcloud       :
-  stackoverflow    : # "123456/username" (the last part of your profile url, e.g. https://stackoverflow.com/users/123456/username)
-  steam            : # "steamId" (the last part of your profile url, e.g. https://steamcommunity.com/id/steamId/)
-  tumblr           :
-  twitter          : DanaMLewis
-  vine             :
-  weibo            :
-  xing             :
-  youtube          : # "https://youtube.com/c/MichaelRoseDesign"
-
 
 # Reading Files
 include:
