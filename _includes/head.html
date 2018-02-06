@@ -3,7 +3,6 @@
 {% include seo.html %}
 
 <link href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ '/feed.xml' | absolute_url }}{% endif %}" type="application/atom+xml" rel="alternate" title="{{ site.title }} Feed">
-<link href="<i class="fa fa-home" aria-hidden="true"></i> {{ site.baseurl }}"></a>
 
 
 <!-- http://t.co/dKP3o1e -->
@@ -16,6 +15,7 @@
 </script>
 
 <!-- For all browsers -->
+<i class="fa fa-home" aria-hidden="true"></i>
 <link rel="stylesheet" href="{{ '/assets/css/main.css' | absolute_url }}">
 
 <!--[if lte IE 9]>
