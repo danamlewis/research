@@ -1,6 +1,6 @@
 ---
 layout: single
 title: trying to get comments to work
-author: Dana Lewis
+author: Eric Hekler
 comments: true
 ---
