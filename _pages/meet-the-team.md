@@ -4,7 +4,6 @@ permalink: /meet-the-team/
 layout: single
 author_profile: false
 ---
-
 ### Dana Lewis, Principal Investigator (PI)
 
 <img src="{{site.baseurl}}/assets/img/Dana Lewis_tulips.JPG" width="267" height="200" align="left" hspace="20" alt="Dana Lewis">
