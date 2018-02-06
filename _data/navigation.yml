@@ -9,3 +9,18 @@ main:
    - title: "Blog"
      url: https://danamlewis.github.io/research/blog
      
+# navigation side bar
+nav:
+  - title: About
+    children:
+      - title: "About the project"
+        url: /about
+      - title: "Meet the team"
+        url: /meet-the-team
+      - title: "Team blog"
+        url: /blog
+
+  - title: External links
+    children:
+      - title: "Team Github
+        url: https://github.com/opening-pathways
