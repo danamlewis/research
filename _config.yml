@@ -17,7 +17,7 @@ url                      : https://danamlewis.github.io # the base hostname & pr
 baseurl                  : /research # the subpath of your site, e.g. "/blog"
 repository               : danamlewis/research # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 author:
-  github                 : "https://github.com/opening-pathways"
+  github                 : opening-pathways
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
