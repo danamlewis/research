@@ -31,6 +31,16 @@ $(document).ready(function(){
     $(".author__urls-wrapper button").toggleClass("open");
   });
 
+   // Search toggle
+  $(".search__toggle").on("click", function() {
+    $(".search-content").toggleClass("is--visible");
+    $(".initial-content").toggleClass("is--hidden");
+    // set focus on input
+    setTimeout(function() {
+      $("#search").focus();
+    }, 400);
+   });
+   
   // init smooth scroll
   $("a").smoothScroll({offset: -20});
 
