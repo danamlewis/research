@@ -1,7 +1,7 @@
 ---
 title: Terms of Use
 layout: single
-permalink: /terms/
+permalink: /terms
 ---
 Terms of Use
 
