@@ -12,7 +12,7 @@ locale                   : "en"
 title                    : "Opening Pathways"
 title_separator          : "-"
 name                     : "Dana Lewis"
-description              : "Thoughts on research, coding, and more."
+description              : "Opening pathways for discovery, research, and innovation in health (and healthcare)."
 url                      : https://danamlewis.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : /research # the subpath of your site, e.g. "/blog"
 repository               : danamlewis/research # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -21,31 +21,8 @@ teaser                   : # path of fallback teaser image, e.g. "/assets/images
 words_per_minute         : 200
 comments:
   provider               : "staticman" # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
-  disqus:
-    shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
-  discourse:
-    server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
-  facebook:
-    # https://developers.facebook.com/docs/plugins/comments
-    appid                :
-    num_posts            : # 5 (default)
-    colorscheme          : # "light" (default), "dark"
 staticman:
-#  allowedFields          : ['name', 'email', 'message']
   branch                 : "master"
-#  commitMessage          : "New comment."
-#  filename               : comment-{@timestamp}
-#  format                 : "yml"
-#  moderation             : true
-#  path                   : "/_data/comments/{options.slug}" # "/_data/comments/{options.slug}" (default)
-#  requiredFields         : ['name', 'email', 'message']
-#  transforms:
-#    email                : "md5"
-#  generatedFields:
-#    date:
-#      type               : "date"
-#      options:
-#        format           : "iso8601" # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
 atom_feed:
   path                   : # blank (default) uses feed.xml
 
@@ -144,6 +121,11 @@ permalink: /:categories/:title/
 paginate: 10 # amount of posts to show
 paginate_path: /blog/page:num/
 timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+
+# Search
+search: true
+search_full_content: true
+
 
 
 # Plugins (previously gems:)
