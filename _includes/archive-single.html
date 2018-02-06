@@ -33,6 +33,9 @@
     {% if post.read_time %}
       <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</p>
     {% endif %}
+     {% if site.data.comments[post.slug].size > 0 and post.comments %}
+     <a href="{{ post.url }}#comments"><i class="fa fa-comments" aria-hidden="true"></i> {{ site.data.comments[post.slug] | size }}&nbsp;Comment{% if site.data.comments[post.slug].size > 1 %}s{% endif %}</a></p>
+          {% endif %}
     {% if post.excerpt %}<p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify | strip_html | truncate: 160 }}</p>{% endif %}
   </article>
 </div>
