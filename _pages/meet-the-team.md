@@ -10,13 +10,12 @@ author_profile: false
 After building her own DIY “artificial pancreas,” Dana Lewis helped found the open source artificial pancreas movement (known as “<a href="www.OpenAPS.org">OpenAPS</a>”), making of safe and effective artificial pancreas technology available (sooner) for people with diabetes around the world. She is part of the #WeAreNotWaiting movement & engages with patient communities globally to solve healthcare problems in new and innovative ways. She's working to scale patient-led innovation and scientific discovery in more patient communities. She is active on Twitter as <a href="http://twitter.com/danamlewis">@DanaMLewis</a>.
 <br>
 
-### Erik Johnston, Co-Investigator
-
+### Erik Johnston, Co-PI
 <img src="{{site.baseurl}}/assets/img/ejohnston.jpg" width="200" height="200" align="left" hspace="20" alt="Erik Johnston"> 
 
 Erik W. Johnston, Ph.D, is an associate professor in the School for the Future of Innovation in Society and the Director of Policy Informatics at the Decision Theater at Arizona State University. Johnston’s research focuses on policy informatics, the study of how computational and communication technology is leveraged to specifically understand and and realize innovations in patient communities, governance processes, and information interventions. At its simplest, his work tries to reduce the gaps between knowledge creation and use. 
 
-### Eric Hekler, Co-Investigator
+### Eric Hekler, Co-PI
 
 <img src="{{site.baseurl}}/assets/img/ehekler.png" width="244" height="200" align="left" hspace="20" alt="Eric Hekler"> 
 
