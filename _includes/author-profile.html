@@ -1,227 +1,2587 @@
-{\rtf1\ansi\ansicpg1252\cocoartf1348\cocoasubrtf170
-{\fonttbl\f0\froman\fcharset0 Times-Roman;\f1\fnil\fcharset0 HelveticaNeue;}
-{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red179\green179\blue179;\red0\green0\blue233;
-}
-{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid1\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}}
-{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}}
-\vieww10800\viewh8400\viewkind0
-\deftab720
-\pard\pardeftab720
-
-\f0\fs24 \cf2 \expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec2 \{% if page.author and site.data.authors[page.author] %\} \{% assign author = site.data.authors[page.author] %\} \{% else %\} \{% assign author = site.author %\} \{% endif %\}\
-\{% if author.avatar %\}\
-\{% if author.avatar contains "://" %\}  \{% else %\}  \{% endif %\} \
-\{% endif %\}\
-\pard\pardeftab720\sa280
-
-\b\fs28 \cf2 \expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \{\{ author.name \}\}\
-\pard\pardeftab720
-
-\b0\fs24 \cf2 \expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \{% if author.bio %\}\
-\pard\pardeftab720\sa240
-\cf2 \expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \{\{ author.bio \}\} \
-\pard\pardeftab720
-\cf2 \expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \{% endif %\} \
-\pard\pardeftab720
-
-\f1\fs22 \cf2 \cb3 \expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \{\{ site.data.ui-text[site.locale].follow_label | remove: ":" | default: "Contact" \}\}
-\f0\fs24 \cb1 \expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \
-\pard\tx220\tx720\pardeftab720\li720\fi-720
-\ls1\ilvl0\cf2 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec2 \{% if author.location %\}\
-\pard\tx220\tx720\pardeftab720\li720\fi-720
-\ls1\ilvl0\cf2 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec2 \{\{ author.location \}\} \
-\pard\tx220\tx720\pardeftab720\li720\fi-720
-\ls1\ilvl0\cf2 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec2 \{% endif %\} \{% if author.uri %\}\
-\pard\tx220\tx720\pardeftab720\li720\fi-720
-\ls1\ilvl0\cf4 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\'95	}{\field{\*\fldinst{HYPERLINK "file:///Users/danamichellelewis/Desktop/research/_includes/%7B%7B%20author.uri%20%7D%7D"}}{\fldrslt \expnd0\expndtw0\kerning0
-\ul \outl0\strokewidth0 \strokec4 \{\{ site.data.ui-text[site.locale].website_label | default: "Website" \}\} }}\cf2 \expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec2 \
-\pard\tx220\tx720\pardeftab720\li720\fi-720
-\ls1\ilvl0\cf2 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec2 \{% endif %\} \{% if author.email %\}\
-\pard\tx220\tx720\pardeftab720\li720\fi-720
-\ls1\ilvl0\cf4 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\'95	}{\field{\*\fldinst{HYPERLINK "mailto:%7B%7B%20author.email%20%7D%7D"}}{\fldrslt \expnd0\expndtw0\kerning0
-\ul \outl0\strokewidth0 \strokec4 \{\{ site.data.ui-text[site.locale].email_label | default: "Email" \}\} }}\cf2 \expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec2 \
-\pard\tx220\tx720\pardeftab720\li720\fi-720
-\ls1\ilvl0\cf2 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec2 \{% endif %\} \{% if author.keybase %\}\
-\pard\tx220\tx720\pardeftab720\li720\fi-720
-\ls1\ilvl0\cf4 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\'95	}{\field{\*\fldinst{HYPERLINK "https://keybase.io/%7B%7B%20author.keybase%20%7D%7D"}}{\fldrslt \expnd0\expndtw0\kerning0
-\ul \outl0\strokewidth0 \strokec4 Keybase }}\cf2 \expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec2 \
-\pard\tx220\tx720\pardeftab720\li720\fi-720
-\ls1\ilvl0\cf2 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec2 \{% endif %\} \{% if author.twitter %\}\
-\pard\tx220\tx720\pardeftab720\li720\fi-720
-\ls1\ilvl0\cf4 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\'95	}{\field{\*\fldinst{HYPERLINK "https://twitter.com/%7B%7B%20author.twitter%20%7D%7D"}}{\fldrslt \expnd0\expndtw0\kerning0
-\ul \outl0\strokewidth0 \strokec4 Twitter }}\cf2 \expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec2 \
-\pard\tx220\tx720\pardeftab720\li720\fi-720
-\ls1\ilvl0\cf2 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec2 \{% endif %\} \{% if author.facebook %\}\
-\pard\tx220\tx720\pardeftab720\li720\fi-720
-\ls1\ilvl0\cf4 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\'95	}{\field{\*\fldinst{HYPERLINK "https://www.facebook.com/%7B%7B%20author.facebook%20%7D%7D"}}{\fldrslt \expnd0\expndtw0\kerning0
-\ul \outl0\strokewidth0 \strokec4 Facebook }}\cf2 \expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec2 \
-\pard\tx220\tx720\pardeftab720\li720\fi-720
-\ls1\ilvl0\cf2 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec2 \{% endif %\} \{% if author.google_plus %\}\
-\pard\tx220\tx720\pardeftab720\li720\fi-720
-\ls1\ilvl0\cf4 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\'95	}{\field{\*\fldinst{HYPERLINK "https://plus.google.com/+%7B%7B%20author.google_plus%20%7D%7D"}}{\fldrslt \expnd0\expndtw0\kerning0
-\ul \outl0\strokewidth0 \strokec4 Google+ }}\cf2 \expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec2 \
-\pard\tx220\tx720\pardeftab720\li720\fi-720
-\ls1\ilvl0\cf2 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec2 \{% endif %\} \{% if author.linkedin %\}\
-\pard\tx220\tx720\pardeftab720\li720\fi-720
-\ls1\ilvl0\cf4 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\'95	}{\field{\*\fldinst{HYPERLINK "https://www.linkedin.com/in/%7B%7B%20author.linkedin%20%7D%7D"}}{\fldrslt \expnd0\expndtw0\kerning0
-\ul \outl0\strokewidth0 \strokec4 LinkedIn }}\cf2 \expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec2 \
-\pard\tx220\tx720\pardeftab720\li720\fi-720
-\ls1\ilvl0\cf2 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec2 \{% endif %\} \{% if author.xing %\}\
-\pard\tx220\tx720\pardeftab720\li720\fi-720
-\ls1\ilvl0\cf4 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\'95	}{\field{\*\fldinst{HYPERLINK "https://www.xing.com/profile/%7B%7B%20author.xing%20%7D%7D"}}{\fldrslt \expnd0\expndtw0\kerning0
-\ul \outl0\strokewidth0 \strokec4 XING }}\cf2 \expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec2 \
-\pard\tx220\tx720\pardeftab720\li720\fi-720
-\ls1\ilvl0\cf2 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec2 \{% endif %\} \{% if author.instagram %\}\
-\pard\tx220\tx720\pardeftab720\li720\fi-720
-\ls1\ilvl0\cf4 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\'95	}{\field{\*\fldinst{HYPERLINK "https://instagram.com/%7B%7B%20author.instagram%20%7D%7D"}}{\fldrslt \expnd0\expndtw0\kerning0
-\ul \outl0\strokewidth0 \strokec4 Instagram }}\cf2 \expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec2 \
-\pard\tx220\tx720\pardeftab720\li720\fi-720
-\ls1\ilvl0\cf2 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec2 \{% endif %\} \{% if author.tumblr %\}\
-\pard\tx220\tx720\pardeftab720\li720\fi-720
-\ls1\ilvl0\cf4 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\'95	}{\field{\*\fldinst{HYPERLINK "https://%7B%7B%20author.tumblr%20%7D%7D.tumblr.com"}}{\fldrslt \expnd0\expndtw0\kerning0
-\ul \outl0\strokewidth0 \strokec4 Tumblr }}\cf2 \expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec2 \
-\pard\tx220\tx720\pardeftab720\li720\fi-720
-\ls1\ilvl0\cf2 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec2 \{% endif %\} \{% if author.bitbucket %\}\
-\pard\tx220\tx720\pardeftab720\li720\fi-720
-\ls1\ilvl0\cf4 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\'95	}{\field{\*\fldinst{HYPERLINK "https://bitbucket.org/%7B%7B%20author.bitbucket%20%7D%7D"}}{\fldrslt \expnd0\expndtw0\kerning0
-\ul \outl0\strokewidth0 \strokec4 Bitbucket }}\cf2 \expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec2 \
-\pard\tx220\tx720\pardeftab720\li720\fi-720
-\ls1\ilvl0\cf2 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec2 \{% endif %\} \{% if author.github %\}\
-\pard\tx220\tx720\pardeftab720\li720\fi-720
-\ls1\ilvl0\cf4 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\'95	}{\field{\*\fldinst{HYPERLINK "https://github.com/%7B%7B%20author.github%20%7D%7D"}}{\fldrslt \expnd0\expndtw0\kerning0
-\ul \outl0\strokewidth0 \strokec4 GitHub }}\cf2 \expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec2 \
-\pard\tx220\tx720\pardeftab720\li720\fi-720
-\ls1\ilvl0\cf2 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec2 \{% endif %\} \{% if author.gitlab %\}\
-\pard\tx220\tx720\pardeftab720\li720\fi-720
-\ls1\ilvl0\cf4 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\'95	}{\field{\*\fldinst{HYPERLINK "https://gitlab.com/%7B%7B%20author.gitlab%20%7D%7D"}}{\fldrslt \expnd0\expndtw0\kerning0
-\ul \outl0\strokewidth0 \strokec4 Gitlab }}\cf2 \expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec2 \
-\pard\tx220\tx720\pardeftab720\li720\fi-720
-\ls1\ilvl0\cf2 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec2 \{% endif %\} \{% if author.stackoverflow %\}\
-\pard\tx220\tx720\pardeftab720\li720\fi-720
-\ls1\ilvl0\cf4 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\'95	}{\field{\*\fldinst{HYPERLINK "https://www.stackoverflow.com/users/%7B%7B%20author.stackoverflow%20%7D%7D"}}{\fldrslt \expnd0\expndtw0\kerning0
-\ul \outl0\strokewidth0 \strokec4 Stackoverflow }}\cf2 \expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec2 \
-\pard\tx220\tx720\pardeftab720\li720\fi-720
-\ls1\ilvl0\cf2 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec2 \{% endif %\} \{% if author.lastfm %\}\
-\pard\tx220\tx720\pardeftab720\li720\fi-720
-\ls1\ilvl0\cf4 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\'95	}{\field{\*\fldinst{HYPERLINK "https://last.fm/user/%7B%7B%20author.lastfm%20%7D%7D"}}{\fldrslt \expnd0\expndtw0\kerning0
-\ul \outl0\strokewidth0 \strokec4 Last.fm }}\cf2 \expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec2 \
-\pard\tx220\tx720\pardeftab720\li720\fi-720
-\ls1\ilvl0\cf2 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec2 \{% endif %\} \{% if author.dribbble %\}\
-\pard\tx220\tx720\pardeftab720\li720\fi-720
-\ls1\ilvl0\cf4 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\'95	}{\field{\*\fldinst{HYPERLINK "https://dribbble.com/%7B%7B%20author.dribbble%20%7D%7D"}}{\fldrslt \expnd0\expndtw0\kerning0
-\ul \outl0\strokewidth0 \strokec4 Dribbble }}\cf2 \expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec2 \
-\pard\tx220\tx720\pardeftab720\li720\fi-720
-\ls1\ilvl0\cf2 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec2 \{% endif %\} \{% if author.pinterest %\}\
-\pard\tx220\tx720\pardeftab720\li720\fi-720
-\ls1\ilvl0\cf4 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\'95	}{\field{\*\fldinst{HYPERLINK "https://www.pinterest.com/%7B%7B%20author.pinterest%20%7D%7D"}}{\fldrslt \expnd0\expndtw0\kerning0
-\ul \outl0\strokewidth0 \strokec4 Pinterest }}\cf2 \expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec2 \
-\pard\tx220\tx720\pardeftab720\li720\fi-720
-\ls1\ilvl0\cf2 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec2 \{% endif %\} \{% if author.foursquare %\}\
-\pard\tx220\tx720\pardeftab720\li720\fi-720
-\ls1\ilvl0\cf4 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\'95	}{\field{\*\fldinst{HYPERLINK "https://foursquare.com/%7B%7B%20author.foursquare%20%7D%7D"}}{\fldrslt \expnd0\expndtw0\kerning0
-\ul \outl0\strokewidth0 \strokec4 Foursquare }}\cf2 \expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec2 \
-\pard\tx220\tx720\pardeftab720\li720\fi-720
-\ls1\ilvl0\cf2 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec2 \{% endif %\} \{% if author.steam %\}\
-\pard\tx220\tx720\pardeftab720\li720\fi-720
-\ls1\ilvl0\cf4 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\'95	}{\field{\*\fldinst{HYPERLINK "https://steamcommunity.com/id/%7B%7B%20author.steam%20%7D%7D"}}{\fldrslt \expnd0\expndtw0\kerning0
-\ul \outl0\strokewidth0 \strokec4 Steam }}\cf2 \expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec2 \
-\pard\tx220\tx720\pardeftab720\li720\fi-720
-\ls1\ilvl0\cf2 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec2 \{% endif %\} \{% if author.youtube %\} \{% if author.youtube contains "://" %\}\
-\pard\tx220\tx720\pardeftab720\li720\fi-720
-\ls1\ilvl0\cf4 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\'95	}{\field{\*\fldinst{HYPERLINK "file:///Users/danamichellelewis/Desktop/research/_includes/%7B%7B%20author.youtube%20%7D%7D"}}{\fldrslt \expnd0\expndtw0\kerning0
-\ul \outl0\strokewidth0 \strokec4 YouTube }}\cf2 \expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec2 \
-\pard\tx220\tx720\pardeftab720\li720\fi-720
-\ls1\ilvl0\cf2 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec2 \{% else author.youtube %\}\
-\pard\tx220\tx720\pardeftab720\li720\fi-720
-\ls1\ilvl0\cf4 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\'95	}{\field{\*\fldinst{HYPERLINK "https://www.youtube.com/user/%7B%7B%20author.youtube%20%7D%7D"}}{\fldrslt \expnd0\expndtw0\kerning0
-\ul \outl0\strokewidth0 \strokec4 YouTube }}\cf2 \expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec2 \
-\pard\tx220\tx720\pardeftab720\li720\fi-720
-\ls1\ilvl0\cf2 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec2 \{% endif %\} \{% endif %\} \{% if author.soundcloud %\}\
-\pard\tx220\tx720\pardeftab720\li720\fi-720
-\ls1\ilvl0\cf4 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\'95	}{\field{\*\fldinst{HYPERLINK "https://soundcloud.com/%7B%7B%20author.soundcloud%20%7D%7D"}}{\fldrslt \expnd0\expndtw0\kerning0
-\ul \outl0\strokewidth0 \strokec4 Soundcloud }}\cf2 \expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec2 \
-\pard\tx220\tx720\pardeftab720\li720\fi-720
-\ls1\ilvl0\cf2 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec2 \{% endif %\} \{% if author.weibo %\}\
-\pard\tx220\tx720\pardeftab720\li720\fi-720
-\ls1\ilvl0\cf4 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\'95	}{\field{\*\fldinst{HYPERLINK "https://www.weibo.com/%7B%7B%20author.weibo%20%7D%7D"}}{\fldrslt \expnd0\expndtw0\kerning0
-\ul \outl0\strokewidth0 \strokec4 Weibo }}\cf2 \expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec2 \
-\pard\tx220\tx720\pardeftab720\li720\fi-720
-\ls1\ilvl0\cf2 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec2 \{% endif %\} \{% if author.flickr %\}\
-\pard\tx220\tx720\pardeftab720\li720\fi-720
-\ls1\ilvl0\cf4 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\'95	}{\field{\*\fldinst{HYPERLINK "https://www.flickr.com/%7B%7B%20author.flickr%20%7D%7D"}}{\fldrslt \expnd0\expndtw0\kerning0
-\ul \outl0\strokewidth0 \strokec4 Flickr }}\cf2 \expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec2 \
-\pard\tx220\tx720\pardeftab720\li720\fi-720
-\ls1\ilvl0\cf2 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec2 \{% endif %\} \{% if author.codepen %\}\
-\pard\tx220\tx720\pardeftab720\li720\fi-720
-\ls1\ilvl0\cf4 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\'95	}{\field{\*\fldinst{HYPERLINK "https://codepen.io/%7B%7B%20author.codepen%20%7D%7D"}}{\fldrslt \expnd0\expndtw0\kerning0
-\ul \outl0\strokewidth0 \strokec4 CodePen }}\cf2 \expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec2 \
-\pard\tx220\tx720\pardeftab720\li720\fi-720
-\ls1\ilvl0\cf2 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec2 \{% endif %\} \{% if author.vine %\}\
-\pard\tx220\tx720\pardeftab720\li720\fi-720
-\ls1\ilvl0\cf4 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\'95	}{\field{\*\fldinst{HYPERLINK "https://vine.co/u/%7B%7B%20author.vine%20%7D%7D"}}{\fldrslt \expnd0\expndtw0\kerning0
-\ul \outl0\strokewidth0 \strokec4 Vine }}\cf2 \expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec2 \
-\pard\tx220\tx720\pardeftab720\li720\fi-720
-\ls1\ilvl0\cf2 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec2 \{% endif %\} \{% include author-profile-custom-links.html %\} \
-}
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="1348.17">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; color: #000000; -webkit-text-stroke: #000000}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; color: #000000; -webkit-text-stroke: #000000; min-height: 14.0px}
+    span.s1 {font-kerning: none}
+    td.td1 {width: 270.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td2 {width: 257.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td3 {width: 57.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td4 {width: 165.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td5 {width: 63.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td6 {margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td7 {width: 262.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td8 {width: 111.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td9 {width: 144.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td10 {width: 176.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td11 {width: 369.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td12 {width: 552.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td13 {width: 33.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td14 {width: 150.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td15 {width: 343.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td16 {width: 97.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td17 {width: 237.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td18 {width: 78.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td19 {width: 23.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td20 {width: 590.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td21 {width: 187.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td22 {width: 120.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td23 {width: 379.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td24 {width: 554.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td25 {width: 24.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td26 {width: 95.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td27 {width: 21.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td28 {width: 210.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td29 {width: 581.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td30 {width: 108.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td31 {width: 181.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td32 {width: 277.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td33 {width: 614.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td34 {width: 347.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td35 {width: 290.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td36 {width: 113.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td37 {width: 332.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td38 {width: 125.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td39 {width: 398.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td40 {width: 357.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td41 {width: 140.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td42 {width: 403.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td43 {width: 365.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td44 {width: 121.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td45 {width: 401.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td46 {width: 350.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td47 {width: 103.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td48 {width: 387.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td49 {width: 318.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td50 {width: 129.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td51 {width: 376.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td52 {width: 326.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td53 {width: 345.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td54 {width: 334.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td55 {width: 126.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td56 {width: 366.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td57 {width: 322.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td58 {width: 112.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td59 {width: 298.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td60 {width: 109.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td61 {width: 336.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td62 {width: 288.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td63 {width: 149.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td64 {width: 472.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td65 {width: 372.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td66 {width: 344.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td67 {width: 333.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td68 {width: 361.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td69 {width: 314.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td70 {width: 123.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td71 {width: 392.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td72 {width: 133.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td73 {width: 384.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td74 {width: 404.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td75 {width: 324.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td76 {width: 186.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td77 {width: 260.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td78 {width: 349.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td79 {width: 131.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td80 {width: 410.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td81 {width: 137.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td82 {width: 368.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td83 {width: 291.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td84 {width: 107.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td85 {width: 360.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td86 {width: 285.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td87 {width: 102.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td88 {width: 323.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td89 {width: 274.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td90 {width: 233.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td91 {width: 27.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+  </style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">{% if page.author and site.data.authors[page.author] %}</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td2">
+        <p class="p1"><span class="s1">{% assign author = site.data.authors[page.author] %}</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td3">
+        <p class="p1"><span class="s1">{% else %}</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td4">
+        <p class="p1"><span class="s1">{% assign author = site.author %}</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td5">
+        <p class="p1"><span class="s1">{% endif %}</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td6">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td7">
+        <p class="p1"><span class="s1">&lt;div itemscope itemtype="http://schema.org/Person"&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td6">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td8">
+        <p class="p1"><span class="s1">{% if author.avatar %}</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td9">
+        <p class="p1"><span class="s1">&lt;div class="author__avatar"&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td10">
+        <p class="p1"><span class="s1">{% if author.avatar contains "://" %}</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td11">
+        <p class="p1"><span class="s1">&lt;img src="{{ author.avatar }}" alt="{{ author.name }}" itemprop="image"&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td3">
+        <p class="p1"><span class="s1">{% else %}</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td12">
+        <p class="p1"><span class="s1">&lt;img src="{{ author.avatar | absolute_url }}" class="author__avatar" alt="{{ author.name }}" itemprop="image"&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td5">
+        <p class="p1"><span class="s1">{% endif %}</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td13">
+        <p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td5">
+        <p class="p1"><span class="s1">{% endif %}</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td6">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td14">
+        <p class="p1"><span class="s1">&lt;div class="author__content"&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td15">
+        <p class="p1"><span class="s1">&lt;h3 class="author__name" itemprop="name"&gt;{{ author.name }}&lt;/h3&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td16">
+        <p class="p1"><span class="s1">{% if author.bio %}</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td17">
+        <p class="p1"><span class="s1">&lt;p class="author__bio" itemprop="description"&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td18">
+        <p class="p1"><span class="s1">{{ author.bio }}</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td19">
+        <p class="p1"><span class="s1">&lt;/p&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td5">
+        <p class="p1"><span class="s1">{% endif %}</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td13">
+        <p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td6">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td10">
+        <p class="p1"><span class="s1">&lt;div class="author__urls-wrapper"&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td20">
+        <p class="p1"><span class="s1">&lt;button class="btn btn--inverse"&gt;{{ site.data.ui-text[site.locale].follow_label | remove: ":" | default: "Contact" }}&lt;/button&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td21">
+        <p class="p1"><span class="s1">&lt;ul class="author__urls social-icons"&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td22">
+        <p class="p1"><span class="s1">{% if author.location %}</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td23">
+        <p class="p1"><span class="s1">&lt;li itemprop="homeLocation" itemscope itemtype="http://schema.org/Place"&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td24">
+        <p class="p1"><span class="s1">&lt;i class="fa fa-fw fa-map-marker" aria-hidden="true"&gt;&lt;/i&gt; &lt;span itemprop="name"&gt;{{ author.location }}&lt;/span&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td25">
+        <p class="p1"><span class="s1">&lt;/li&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td5">
+        <p class="p1"><span class="s1">{% endif %}</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td6">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td26">
+        <p class="p1"><span class="s1">{% if author.uri %}</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td27">
+        <p class="p1"><span class="s1">&lt;li&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td28">
+        <p class="p1"><span class="s1">&lt;a href="{{ author.uri }}" itemprop="url"&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td29">
+        <p class="p1"><span class="s1">&lt;i class="fa fa-fw fa-chain" aria-hidden="true"&gt;&lt;/i&gt; {{ site.data.ui-text[site.locale].website_label | default: "Website" }}</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td19">
+        <p class="p1"><span class="s1">&lt;/a&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td25">
+        <p class="p1"><span class="s1">&lt;/li&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td5">
+        <p class="p1"><span class="s1">{% endif %}</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td6">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td30">
+        <p class="p1"><span class="s1">{% if author.email %}</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td27">
+        <p class="p1"><span class="s1">&lt;li&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td31">
+        <p class="p1"><span class="s1">&lt;a href="mailto:{{ author.email }}"&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td32">
+        <p class="p1"><span class="s1">&lt;meta itemprop="email" content="{{ author.email }}" /&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td33">
+        <p class="p1"><span class="s1">&lt;i class="fa fa-fw fa-envelope-square" aria-hidden="true"&gt;&lt;/i&gt; {{ site.data.ui-text[site.locale].email_label | default: "Email" }}</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td19">
+        <p class="p1"><span class="s1">&lt;/a&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td25">
+        <p class="p1"><span class="s1">&lt;/li&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td5">
+        <p class="p1"><span class="s1">{% endif %}</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td6">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td22">
+        <p class="p1"><span class="s1">{% if author.keybase %}</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td27">
+        <p class="p1"><span class="s1">&lt;li&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td34">
+        <p class="p1"><span class="s1">&lt;a href="https://keybase.io/{{ author.keybase }}" itemprop="sameAs"&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td35">
+        <p class="p1"><span class="s1">&lt;i class="fa fa-fw fa-key" aria-hidden="true"&gt;&lt;/i&gt; Keybase</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td19">
+        <p class="p1"><span class="s1">&lt;/a&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td25">
+        <p class="p1"><span class="s1">&lt;/li&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td5">
+        <p class="p1"><span class="s1">{% endif %}</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td6">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td36">
+        <p class="p1"><span class="s1">{% if author.twitter %}</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td27">
+        <p class="p1"><span class="s1">&lt;li&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td15">
+        <p class="p1"><span class="s1">&lt;a href="https://twitter.com/{{ author.twitter }}" itemprop="sameAs"&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td37">
+        <p class="p1"><span class="s1">&lt;i class="fa fa-fw fa-twitter-square" aria-hidden="true"&gt;&lt;/i&gt; Twitter</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td19">
+        <p class="p1"><span class="s1">&lt;/a&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td25">
+        <p class="p1"><span class="s1">&lt;/li&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td5">
+        <p class="p1"><span class="s1">{% endif %}</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td6">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td38">
+        <p class="p1"><span class="s1">{% if author.facebook %}</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td27">
+        <p class="p1"><span class="s1">&lt;li&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td39">
+        <p class="p1"><span class="s1">&lt;a href="https://www.facebook.com/{{ author.facebook }}" itemprop="sameAs"&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td40">
+        <p class="p1"><span class="s1">&lt;i class="fa fa-fw fa-facebook-square" aria-hidden="true"&gt;&lt;/i&gt; Facebook</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td19">
+        <p class="p1"><span class="s1">&lt;/a&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td25">
+        <p class="p1"><span class="s1">&lt;/li&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td5">
+        <p class="p1"><span class="s1">{% endif %}</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td6">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td41">
+        <p class="p1"><span class="s1">{% if author.google_plus %}</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td27">
+        <p class="p1"><span class="s1">&lt;li&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td42">
+        <p class="p1"><span class="s1">&lt;a href="https://plus.google.com/+{{ author.google_plus }}" itemprop="sameAs"&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td43">
+        <p class="p1"><span class="s1">&lt;i class="fa fa-fw fa-google-plus-square" aria-hidden="true"&gt;&lt;/i&gt; Google+</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td19">
+        <p class="p1"><span class="s1">&lt;/a&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td25">
+        <p class="p1"><span class="s1">&lt;/li&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td5">
+        <p class="p1"><span class="s1">{% endif %}</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td6">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td44">
+        <p class="p1"><span class="s1">{% if author.linkedin %}</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td27">
+        <p class="p1"><span class="s1">&lt;li&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td45">
+        <p class="p1"><span class="s1">&lt;a href="https://www.linkedin.com/in/{{ author.linkedin }}" itemprop="sameAs"&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td46">
+        <p class="p1"><span class="s1">&lt;i class="fa fa-fw fa-linkedin-square" aria-hidden="true"&gt;&lt;/i&gt; LinkedIn</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td19">
+        <p class="p1"><span class="s1">&lt;/a&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td25">
+        <p class="p1"><span class="s1">&lt;/li&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td5">
+        <p class="p1"><span class="s1">{% endif %}</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td6">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td47">
+        <p class="p1"><span class="s1">{% if author.xing %}</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td27">
+        <p class="p1"><span class="s1">&lt;li&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td48">
+        <p class="p1"><span class="s1">&lt;a href="https://www.xing.com/profile/{{ author.xing }}" itemprop="sameAs"&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td49">
+        <p class="p1"><span class="s1">&lt;i class="fa fa-fw fa-xing-square" aria-hidden="true"&gt;&lt;/i&gt; XING</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td19">
+        <p class="p1"><span class="s1">&lt;/a&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td25">
+        <p class="p1"><span class="s1">&lt;/li&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td5">
+        <p class="p1"><span class="s1">{% endif %}</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td6">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td50">
+        <p class="p1"><span class="s1">{% if author.instagram %}</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td27">
+        <p class="p1"><span class="s1">&lt;li&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td51">
+        <p class="p1"><span class="s1">&lt;a href="https://instagram.com/{{ author.instagram }}" itemprop="sameAs"&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td52">
+        <p class="p1"><span class="s1">&lt;i class="fa fa-fw fa-instagram" aria-hidden="true"&gt;&lt;/i&gt; Instagram</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td19">
+        <p class="p1"><span class="s1">&lt;/a&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td25">
+        <p class="p1"><span class="s1">&lt;/li&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td5">
+        <p class="p1"><span class="s1">{% endif %}</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td6">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td36">
+        <p class="p1"><span class="s1">{% if author.tumblr %}</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td27">
+        <p class="p1"><span class="s1">&lt;li&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td53">
+        <p class="p1"><span class="s1">&lt;a href="https://{{ author.tumblr }}.tumblr.com" itemprop="sameAs"&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td54">
+        <p class="p1"><span class="s1">&lt;i class="fa fa-fw fa-tumblr-square" aria-hidden="true"&gt;&lt;/i&gt; Tumblr</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td19">
+        <p class="p1"><span class="s1">&lt;/a&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td25">
+        <p class="p1"><span class="s1">&lt;/li&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td5">
+        <p class="p1"><span class="s1">{% endif %}</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td6">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td55">
+        <p class="p1"><span class="s1">{% if author.bitbucket %}</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td27">
+        <p class="p1"><span class="s1">&lt;li&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td56">
+        <p class="p1"><span class="s1">&lt;a href="https://bitbucket.org/{{ author.bitbucket }}" itemprop="sameAs"&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td57">
+        <p class="p1"><span class="s1">&lt;i class="fa fa-fw fa-bitbucket" aria-hidden="true"&gt;&lt;/i&gt; Bitbucket</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td19">
+        <p class="p1"><span class="s1">&lt;/a&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td25">
+        <p class="p1"><span class="s1">&lt;/li&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td5">
+        <p class="p1"><span class="s1">{% endif %}</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td6">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td58">
+        <p class="p1"><span class="s1">{% if author.github %}</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td27">
+        <p class="p1"><span class="s1">&lt;li&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td15">
+        <p class="p1"><span class="s1">&lt;a href="https://github.com/{{ author.github }}" itemprop="sameAs"&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td59">
+        <p class="p1"><span class="s1">&lt;i class="fa fa-fw fa-github" aria-hidden="true"&gt;&lt;/i&gt; GitHub</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td19">
+        <p class="p1"><span class="s1">&lt;/a&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td25">
+        <p class="p1"><span class="s1">&lt;/li&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td5">
+        <p class="p1"><span class="s1">{% endif %}</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td6">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td60">
+        <p class="p1"><span class="s1">{% if author.gitlab %}</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td27">
+        <p class="p1"><span class="s1">&lt;li&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td61">
+        <p class="p1"><span class="s1">&lt;a href="https://gitlab.com/{{ author.gitlab }}" itemprop="sameAs"&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td62">
+        <p class="p1"><span class="s1">&lt;i class="fa fa-fw fa-gitlab" aria-hidden="true"&gt;&lt;/i&gt; Gitlab</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td19">
+        <p class="p1"><span class="s1">&lt;/a&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td25">
+        <p class="p1"><span class="s1">&lt;/li&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td5">
+        <p class="p1"><span class="s1">{% endif %}</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td6">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td63">
+        <p class="p1"><span class="s1">{% if author.stackoverflow %}</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td27">
+        <p class="p1"><span class="s1">&lt;li&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td64">
+        <p class="p1"><span class="s1">&lt;a href="https://www.stackoverflow.com/users/{{ author.stackoverflow }}" itemprop="sameAs"&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td65">
+        <p class="p1"><span class="s1">&lt;i class="fa fa-fw fa-stack-overflow" aria-hidden="true"&gt;&lt;/i&gt; Stackoverflow</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td19">
+        <p class="p1"><span class="s1">&lt;/a&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td25">
+        <p class="p1"><span class="s1">&lt;/li&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td5">
+        <p class="p1"><span class="s1">{% endif %}</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td6">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td8">
+        <p class="p1"><span class="s1">{% if author.lastfm %}</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td27">
+        <p class="p1"><span class="s1">&lt;li&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td66">
+        <p class="p1"><span class="s1">&lt;a href="https://last.fm/user/{{ author.lastfm }}" itemprop="sameAs"&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td67">
+        <p class="p1"><span class="s1">&lt;i class="fa fa-fw fa-lastfm-square" aria-hidden="true"&gt;&lt;/i&gt; Last.fm</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td19">
+        <p class="p1"><span class="s1">&lt;/a&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td25">
+        <p class="p1"><span class="s1">&lt;/li&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td5">
+        <p class="p1"><span class="s1">{% endif %}</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td6">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td44">
+        <p class="p1"><span class="s1">{% if author.dribbble %}</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td27">
+        <p class="p1"><span class="s1">&lt;li&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td68">
+        <p class="p1"><span class="s1">&lt;a href="https://dribbble.com/{{ author.dribbble }}" itemprop="sameAs"&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td69">
+        <p class="p1"><span class="s1">&lt;i class="fa fa-fw fa-dribbble" aria-hidden="true"&gt;&lt;/i&gt; Dribbble</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td19">
+        <p class="p1"><span class="s1">&lt;/a&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td25">
+        <p class="p1"><span class="s1">&lt;/li&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td5">
+        <p class="p1"><span class="s1">{% endif %}</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td6">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td70">
+        <p class="p1"><span class="s1">{% if author.pinterest %}</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td27">
+        <p class="p1"><span class="s1">&lt;li&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td71">
+        <p class="p1"><span class="s1">&lt;a href="https://www.pinterest.com/{{ author.pinterest }}" itemprop="sameAs"&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td69">
+        <p class="p1"><span class="s1">&lt;i class="fa fa-fw fa-pinterest" aria-hidden="true"&gt;&lt;/i&gt; Pinterest</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td19">
+        <p class="p1"><span class="s1">&lt;/a&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td25">
+        <p class="p1"><span class="s1">&lt;/li&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td5">
+        <p class="p1"><span class="s1">{% endif %}</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td6">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td72">
+        <p class="p1"><span class="s1">{% if author.foursquare %}</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td27">
+        <p class="p1"><span class="s1">&lt;li&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td73">
+        <p class="p1"><span class="s1">&lt;a href="https://foursquare.com/{{ author.foursquare }}" itemprop="sameAs"&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td61">
+        <p class="p1"><span class="s1">&lt;i class="fa fa-fw fa-foursquare" aria-hidden="true"&gt;&lt;/i&gt; Foursquare</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td19">
+        <p class="p1"><span class="s1">&lt;/a&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td25">
+        <p class="p1"><span class="s1">&lt;/li&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td5">
+        <p class="p1"><span class="s1">{% endif %}</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td6">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td60">
+        <p class="p1"><span class="s1">{% if author.steam %}</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td27">
+        <p class="p1"><span class="s1">&lt;li&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td74">
+        <p class="p1"><span class="s1">&lt;a href="https://steamcommunity.com/id/{{ author.steam }}" itemprop="sameAs"&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td75">
+        <p class="p1"><span class="s1">&lt;i class="fa fa-fw fa-steam-square" aria-hidden="true"&gt;&lt;/i&gt; Steam</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td19">
+        <p class="p1"><span class="s1">&lt;/a&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td25">
+        <p class="p1"><span class="s1">&lt;/li&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td5">
+        <p class="p1"><span class="s1">{% endif %}</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td6">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td22">
+        <p class="p1"><span class="s1">{% if author.youtube %}</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td76">
+        <p class="p1"><span class="s1">{% if author.youtube contains "://" %}</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td27">
+        <p class="p1"><span class="s1">&lt;li&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td77">
+        <p class="p1"><span class="s1">&lt;a href="{{ author.youtube }}" itemprop="sameAs"&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td78">
+        <p class="p1"><span class="s1">&lt;i class="fa fa-fw fa-youtube-square" aria-hidden="true"&gt;&lt;/i&gt; YouTube</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td19">
+        <p class="p1"><span class="s1">&lt;/a&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td25">
+        <p class="p1"><span class="s1">&lt;/li&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td79">
+        <p class="p1"><span class="s1">{% else author.youtube %}</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td27">
+        <p class="p1"><span class="s1">&lt;li&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td80">
+        <p class="p1"><span class="s1">&lt;a href="https://www.youtube.com/user/{{ author.youtube }}" itemprop="sameAs"&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td78">
+        <p class="p1"><span class="s1">&lt;i class="fa fa-fw fa-youtube-square" aria-hidden="true"&gt;&lt;/i&gt; YouTube</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td19">
+        <p class="p1"><span class="s1">&lt;/a&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td25">
+        <p class="p1"><span class="s1">&lt;/li&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td5">
+        <p class="p1"><span class="s1">{% endif %}</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td5">
+        <p class="p1"><span class="s1">{% endif %}</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td6">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td81">
+        <p class="p1"><span class="s1">{% if author.soundcloud %}</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td27">
+        <p class="p1"><span class="s1">&lt;li&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td71">
+        <p class="p1"><span class="s1">&lt;a href="https://soundcloud.com/{{ author.soundcloud }}" itemprop="sameAs"&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td66">
+        <p class="p1"><span class="s1">&lt;i class="fa fa-fw fa-soundcloud" aria-hidden="true"&gt;&lt;/i&gt; Soundcloud</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td19">
+        <p class="p1"><span class="s1">&lt;/a&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td25">
+        <p class="p1"><span class="s1">&lt;/li&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td5">
+        <p class="p1"><span class="s1">{% endif %}</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td6">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td8">
+        <p class="p1"><span class="s1">{% if author.weibo %}</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td27">
+        <p class="p1"><span class="s1">&lt;li&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td82">
+        <p class="p1"><span class="s1">&lt;a href="https://www.weibo.com/{{ author.weibo }}" itemprop="sameAs"&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td83">
+        <p class="p1"><span class="s1">&lt;i class="fa fa-fw fa-weibo" aria-hidden="true"&gt;&lt;/i&gt; Weibo</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td19">
+        <p class="p1"><span class="s1">&lt;/a&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td25">
+        <p class="p1"><span class="s1">&lt;/li&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td5">
+        <p class="p1"><span class="s1">{% endif %}</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td6">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td84">
+        <p class="p1"><span class="s1">{% if author.flickr %}</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td27">
+        <p class="p1"><span class="s1">&lt;li&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td85">
+        <p class="p1"><span class="s1">&lt;a href="https://www.flickr.com/{{ author.flickr }}" itemprop="sameAs"&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td86">
+        <p class="p1"><span class="s1">&lt;i class="fa fa-fw fa-flickr" aria-hidden="true"&gt;&lt;/i&gt; Flickr</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td19">
+        <p class="p1"><span class="s1">&lt;/a&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td25">
+        <p class="p1"><span class="s1">&lt;/li&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td5">
+        <p class="p1"><span class="s1">{% endif %}</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td6">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td44">
+        <p class="p1"><span class="s1">{% if author.codepen %}</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td27">
+        <p class="p1"><span class="s1">&lt;li&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td46">
+        <p class="p1"><span class="s1">&lt;a href="https://codepen.io/{{ author.codepen }}" itemprop="sameAs"&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td69">
+        <p class="p1"><span class="s1">&lt;i class="fa fa-fw fa-codepen" aria-hidden="true"&gt;&lt;/i&gt; CodePen</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td19">
+        <p class="p1"><span class="s1">&lt;/a&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td25">
+        <p class="p1"><span class="s1">&lt;/li&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td5">
+        <p class="p1"><span class="s1">{% endif %}</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td6">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td87">
+        <p class="p1"><span class="s1">{% if author.vine %}</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td27">
+        <p class="p1"><span class="s1">&lt;li&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td88">
+        <p class="p1"><span class="s1">&lt;a href="https://vine.co/u/{{ author.vine }}" itemprop="sameAs"&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td89">
+        <p class="p1"><span class="s1">&lt;i class="fa fa-fw fa-vine" aria-hidden="true"&gt;&lt;/i&gt; Vine</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td19">
+        <p class="p1"><span class="s1">&lt;/a&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td25">
+        <p class="p1"><span class="s1">&lt;/li&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td5">
+        <p class="p1"><span class="s1">{% endif %}</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td6">
+        <p class="p2"><span class="s1"></span><br></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td90">
+        <p class="p1"><span class="s1">{% include author-profile-custom-links.html %}</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td91">
+        <p class="p1"><span class="s1">&lt;/ul&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><span class="s1"></span><br></p>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>
