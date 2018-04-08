@@ -19,11 +19,13 @@
     {% include browser-upgrade.html %}
     {% include masthead.html %}
 
-    {{ content }}
-    
-        {% if site.search == true %}
+    <div class="initial-content">
+      {{ content }}
+    </div>
+
+    {% if site.search == true %}
       <div class="search-content">
-        {% include search/search_form.html %}
+        {% include search_form.html %}
       </div>
     {% endif %}
     
