@@ -20,8 +20,10 @@
           </svg>
         </button>
         {% endif %}
-        <button><div class="navicon"></div></button>
-        <ul class="hidden-links hidden"></ul>
+        <button class="greedy-nav__toggle" type="button">
+           <span class="visually-hidden">{{ site.data.ui-text[site.locale].menu_label | default: "Toggle Menu" }}</span>
+           <div class="navicon"></div>
+         </button>
       </nav>
     </div>
   </div>
